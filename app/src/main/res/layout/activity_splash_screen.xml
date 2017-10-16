@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
     android:id="@+id/splash_screen"
-    android:background="#5082c9">
+    android:background="@color/backgroudn_color">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/splash_screen_imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:scaleType="fitXY"/>
 </RelativeLayout>

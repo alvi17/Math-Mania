@@ -2,16 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".MenuActivity"
     android:weightSum="10"
-    android:background="#5082c9"
     android:id="@+id/menu_layout">
+
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/menu_background_image"
-        android:background="#5082c9"
+        android:background="@color/backgroudn_color"
         android:scaleType="fitXY"/>
 
     <android.support.v4.view.ViewPager
@@ -23,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="135dp"
         android:id="@+id/logoMenu"
-        android:src="@drawable/logo_menu"
+        android:src="@drawable/ic_logo"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true" />
 
@@ -91,6 +93,16 @@
         android:layout_marginRight="7dp"
         android:src="@drawable/share_button"
         android:onClick="share"/>
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
 
 
 </RelativeLayout>

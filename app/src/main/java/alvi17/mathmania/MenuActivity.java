@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
@@ -101,6 +104,10 @@ public class MenuActivity extends FragmentActivity implements
         myProgress = MyProgress.getInstance();
 
 
+        //Load banner ads
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
 
@@ -124,9 +131,11 @@ public class MenuActivity extends FragmentActivity implements
             // an issue with sign in, please try again later."
             if (!BaseGameUtils.resolveConnectionFailure(this,
                     mGoogleApiClient, connectionResult,
-                    RC_SIGN_IN, getString(R.string.signin_other_error))) {
+                    RC_SIGN_IN, getString(R.string.signin_other_error)+" error: "+connectionResult.getErrorMessage())) {
                 mResolvingConnectionFailure = false;
             }
+
+            Log.e("MenuActivity",""+connectionResult.getErrorMessage());
         }
 
 

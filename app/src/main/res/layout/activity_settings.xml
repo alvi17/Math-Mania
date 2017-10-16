@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudn_color"
     android:id="@+id/settings_layout">
 
     <ImageView
@@ -154,7 +155,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FixMath made by"
+                android:text="Math Mania is a clone of FixMath made by"
                 android:id="@+id/textView24"
                 android:textColor="#FFFDC90A"
                 android:textSize="15sp"
@@ -179,19 +180,6 @@
                 android:layout_alignParentLeft="true"
                 android:gravity="center_horizontal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="pszem.szym@gmail.com"
-                android:id="@+id/textView26"
-                android:textColor="#FFFDC90A"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-black"
-                android:layout_below="@+id/textView25"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentLeft="true"
-                android:gravity="center_horizontal" />
         </LinearLayout>
 
     </LinearLayout>

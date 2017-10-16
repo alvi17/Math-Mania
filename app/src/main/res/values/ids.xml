@@ -2,24 +2,25 @@
 <resources>
 
     <string name="app_id" translatable="false">165152697114</string>
-    <string name="admob_id" translatable="false">pub-9775612116073570</string>
-    <string name="adID" translatable="false">ca-app-pub-9775612116073570/9887118846</string>
+    <string name="admob_id" translatable="false">ca-app-pub-6508526601344465</string>
+    <string name="adID" translatable="false">ca-app-pub-6508526601344465/6621656128</string>
+
     <string name="Pierwsze_Osiagniecie" translatable="false">CgkIkPHCnOgZEAIQAQ</string>
 
 
-    <string name="five_minutes" translatable="false">CgkI7tjloaMREAIQAw</string>
-    <string name="three_minutes" translatable="false">CgkI7tjloaMREAIQAg</string>
-    <string name="one_minute" translatable="false">CgkI7tjloaMREAIQAQ</string>
+    <string name="five_minutes" translatable="false">CgkImtb4nucEEAIQBA</string>
+    <string name="three_minutes" translatable="false">CgkImtb4nucEEAIQAw</string>
+    <string name="one_minute" translatable="false">CgkImtb4nucEEAIQAg</string>
 
-    <string name="arcade1" translatable="false">CgkI7tjloaMREAIQBA</string>
-    <string name="arcade2" translatable="false">CgkI7tjloaMREAIQBQ</string>
-    <string name="arcade3" translatable="false">CgkI7tjloaMREAIQBg</string>
-    <string name="arcade4" translatable="false">CgkI7tjloaMREAIQBw</string>
-    <string name="arcade5" translatable="false">CgkI7tjloaMREAIQCA</string>
+    <string name="arcade1" translatable="false">CgkImtb4nucEEAIQCA</string>
+    <string name="arcade2" translatable="false">CgkImtb4nucEEAIQCQ</string>
+    <string name="arcade3" translatable="false">CgkImtb4nucEEAIQCg</string>
+    <string name="arcade4" translatable="false">CgkImtb4nucEEAIQCw</string>
+    <string name="arcade5" translatable="false">CgkImtb4nucEEAIQDA</string>
 
-    <string name="time_attack1" translatable="false">CgkI7tjloaMREAIQCQ</string>
-    <string name="time_attack2" translatable="false">CgkI7tjloaMREAIQCg</string>
-    <string name="time_attack3" translatable="false">CgkI7tjloaMREAIQCw</string>
+    <string name="time_attack1" translatable="false">CgkImtb4nucEEAIQBQ</string>
+    <string name="time_attack2" translatable="false">CgkImtb4nucEEAIQBg</string>
+    <string name="time_attack3" translatable="false">CgkImtb4nucEEAIQBw</string>
 
 
 

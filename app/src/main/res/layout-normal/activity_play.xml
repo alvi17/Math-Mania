@@ -2,9 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".PlayActivity"
     android:id="@+id/PlayAct"
-    android:background="#5082c9">
+    android:background="@color/backgroudn_color">
 
 
     <ImageView
@@ -94,7 +95,7 @@
     android:id="@+id/logo_s"
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_s"
+        android:src="@mipmap/ic_launcher"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="5dp" />
 
@@ -190,9 +191,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/keyboard_cls_down"
-            android:layout_alignParentBottom="true"
             android:visibility="visible"
-            android:onClick="KeyboardCloseAnimateField" />
+            android:onClick="KeyboardCloseAnimateField"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/figure_color"
+            android:layout_toEndOf="@+id/figure_color" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -1347,5 +1350,16 @@
 
     </LinearLayout>
     </RelativeLayout>
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
 
 </RelativeLayout>

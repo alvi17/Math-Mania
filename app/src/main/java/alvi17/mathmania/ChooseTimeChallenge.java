@@ -120,8 +120,6 @@ public class ChooseTimeChallenge extends BaseGameActivity implements GoogleApiCl
         }
 
 
-
-
     }
 
     @Override

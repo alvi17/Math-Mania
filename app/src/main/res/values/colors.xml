@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <color name="colorPrimary">#359e5f</color>
+    <color name="colorPrimaryDark">#1a875f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backgroudn_color"> #70cea7</color>
+
     <color name="background_color1">#262b30</color>
     <color name="background_color2">#a115d5</color>
     <color name="animation_score">#36a628</color>

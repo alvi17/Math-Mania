@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/time_attack_layout"
-    android:background="#000000">
+    android:background="@color/backgroudn_color">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/time_attack_background"
-        android:src="#000000"
+        android:src="@color/backgroudn_color"
         android:scaleType="fitXY"/>
 
     <ImageView
@@ -847,7 +847,7 @@
         android:id="@+id/imageView4"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/logo_s"
+        android:src="@mipmap/ic_launcher"
         android:layout_marginBottom="5dp" />
 
     <TextView
@@ -959,5 +959,14 @@
 
     </RelativeLayout>
 
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
 
 </RelativeLayout>

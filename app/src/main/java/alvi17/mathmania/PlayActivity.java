@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
@@ -75,7 +76,7 @@ public class PlayActivity extends BaseGameActivity implements
 
         ImageView background = (ImageView) findViewById(R.id.play_background_image);
         imageUtil = (ImageUtil) getApplication();
-        imageUtil.setImageSecond(background, R.drawable.arcade_background);
+        imageUtil.setImageSecond(background, R.drawable.level_background);
         YoYo.with(Techniques.FadeIn).duration(500).playOn(findViewById(R.id.PlayAct));
 
         getGameHelper().setConnectOnStart(false);
@@ -129,6 +130,12 @@ public class PlayActivity extends BaseGameActivity implements
         setAcutalLevelTextView(levelActual1);
 
         setupIntersitialAds(levelActual1);
+
+
+        //Load banner ads
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
     }
 

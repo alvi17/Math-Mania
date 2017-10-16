@@ -24,7 +24,7 @@ public class SplashScreenActivity extends Activity  {
         imageUtil = (ImageUtil) getApplication();
 
         ImageView splashScreen = (ImageView)findViewById(R.id.splash_screen_imageview);
-        imageUtil.setImageFirst(splashScreen, R.drawable.splash_screen );
+        imageUtil.setImageFirst(splashScreen, R.drawable.ic_logo );
 
         YoYo.with(Techniques.Pulse)
                 .delay(700)
