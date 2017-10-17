@@ -103,10 +103,9 @@ public class MenuActivity extends FragmentActivity implements
 
         myProgress = MyProgress.getInstance();
 
-
         //Load banner ads
         AdView adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("0754C239B1E2E19421FDE46BCEFB8855").build();
         adView.loadAd(adRequest);
     }
 

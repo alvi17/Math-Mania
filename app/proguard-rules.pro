@@ -12,9 +12,12 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+-keepclassmembers class alvi17.mathmani.MenuActivity {
+   public *;
+}
+-keepclassmembers class alvi17.mathmani.PagerAdapter{
+   public *;
+}
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
@@ -24,10 +27,3 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--dontwarn junit.**
--assumenosideeffects class android.util.Log {
-    public static int d(...);
-    public static int w(...);
-    public static int v(...);
-    public static int i(...);
-}
